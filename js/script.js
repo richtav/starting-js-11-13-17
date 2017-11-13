@@ -139,3 +139,28 @@ sumNums(2,2);
 //console.log(sumNums(2,2) );
 
 var mySum = sumNums(923, 13454);
+
+
+var apollo = {
+isDog: true,
+breed: 'mutt',
+legs: 4,
+age: 2,
+toys: ['Mrs. Moose', 'bone', 'half a giraffe' ],
+//this is the speak method on the dog object, in JS methods are functions that are the property of an object
+speak: function() {
+  console.log('woof woof');
+},
+sayHiTo: function(name, age) {
+    console.log("Hi " + "name " + "woof woof! You're " + age);
+  }
+};
+//this calls the speak method on the apollo object
+apollo.speak();
+// With functions that use multiple parameter the order matters, supply the parameter in the same order in which the argumens are listed where the function is defined
+
+apollo.sayHiTo("Stella", 5);
+
+
+//The console object is a global object created within the browser, log is a method on that object.
+console.log(console);
